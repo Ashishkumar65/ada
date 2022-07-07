@@ -25,7 +25,7 @@ int main(){
         int mini=INT_MAX,u;
         for(int i=0;i<v;i++){
             if(vis[i]==0&&key[i]<mini){
-                mini=vis[i];
+                mini=key[i];
                 u=i;
             }
         }
