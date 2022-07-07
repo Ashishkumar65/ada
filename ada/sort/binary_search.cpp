@@ -30,19 +30,19 @@ int binarySearch(int a[], int first, int last, int search_num)
    if(last >= first)
    {
       middle = (first + last)/2;
-      //Checking if the element is present at middle loc
+     
       if(a[middle] == search_num)
       {
          return middle+1;
       }
 
-      //Checking if the search element is present in greater half
+    
       else if(a[middle] < search_num)
       {
          return binarySearch(a,middle+1,last,search_num);
       }
 
-      //Checking if the search element is present in lower half
+  
       else
       {
          return binarySearch(a,first,middle-1,search_num);
